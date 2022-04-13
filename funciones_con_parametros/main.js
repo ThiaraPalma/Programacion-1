@@ -13,9 +13,9 @@ function mostrar()
    const dato1 = document.querySelector("#inp_dato1").value
    
     //Forma 2 mas rapida
-   const dato2 = document.getElementById("inp_dato2").value
+    const dato2 = document.getElementById("inp_dato2").value
 
-   //Aca ejecutamos e invocamos a la funcion 
+    //Aca ejecutamos e invocamos a la funcion 
     const respuesta = calcular(dato1,dato2)
 
     document.getElementById("h_resultado").textContent = respuesta
