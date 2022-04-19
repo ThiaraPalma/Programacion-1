@@ -1,15 +1,17 @@
  const calcular1 = (n1,n2,n3) => {
  const bloque1 = Math.pow(n2,2) - (4*n1*n3)
- const bloque2 = (-n2 -( Math.sqrt (bloque1))) / (2*n1)
- return 'Raiz 1 =' + bloque2
+ const bloque2 = ( Math.sqrt (bloque1))
+ const bloque3 = (-n2 - (bloque2 )) / (2*n1)
+ return 'Raiz 1 =' + bloque3
  }
  const calcular2 = (n1,n2,n3) => {
     const bloque1 = Math.pow(n2,2) - (4*n1*n3)
-    const bloque2 = (-n2 +( Math.sqrt (bloque1))) / (2*n1)
-   return 'Raiz 2 =' + bloque2 
+    const bloque2 = ( Math.sqrt (bloque1))
+    const bloque3 = (-n2 + (bloque2 )) / (2*n1)
+   return 'Raiz 2 =' + bloque3 
  }
 
- const mostrar = () => {
+  const mostrar = () => {
   
     const dato1 = document.getElementById("dato1").value
     const dato2 = document.getElementById("dato2").value
