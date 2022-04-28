@@ -61,4 +61,6 @@ copia.push("Dragon Ball")
 console.log(copia)
 console.log(series)
 
+console.log(lenguajes)
+
 
