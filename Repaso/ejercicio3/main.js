@@ -4,20 +4,24 @@ function calcular(d1,d2,select){
         resultado = parseInt (d1) + parseInt (d2)
     }else{ 
         if (select == 1){
-        resultado = parseInt (d1) - parseInt (d2)
-    }else{
-        if (select == 2){
-            resultado = parseInt (d1) / parseInt (d2)
-    }else{
-    resultado = parseInt (d1) * parseInt (d2)
-      }
+            resultado = parseInt (d1) - parseInt (d2)
+        }else{
+            if (select == 2){
+                resultado = parseInt (d1) / parseInt (d2)
+            } else{
+                resultado = parseInt (d1) * parseInt (d2)
+            }
+
+        }
 
     }
+
+    return resultado
 }
 
 function mostrar(){
  //recoge las valores
-    const seleccionado = document.getElementById("sth_calcular").value
+    const seleccionado = document.getElementById("slh_calcular").value
 
     const dato1 = document.getElementById("inp_dato1").value
     const dato2 = document.getElementById("inp_dato2").value
@@ -27,7 +31,3 @@ function mostrar(){
     document.getElementById("h_resultado").textContent = respuesta
     
 }
-
-const boton = document.getElementById ("btn_calcular")
-
-boton.addEventListener("click", mostrar)
