@@ -17,6 +17,6 @@ function mostrar()
 
     //Aca ejecutamos e invocamos a la funcion 
     const respuesta = calcular(dato1,dato2)
-
+     
     document.getElementById("h_resultado").textContent = respuesta
 }

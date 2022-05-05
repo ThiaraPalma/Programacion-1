@@ -21,6 +21,6 @@ Encontrar u obtener el boton y guardarlo en la constante
 const boton = document.getElementById("btn_calcular")
 
 /*  
-Agregamos in evento a escuchar.En este caso "click"
+Agregamos e evento a escuchar.En este caso "click"
 */ 
 boton.addEventListener("click", mostrar)
