@@ -17,7 +17,7 @@ function calcular(){
         if (auto == 2560000 ){
             resultado = 2560000 - ((2560000 * 10) /100) 
         } else{
-             resultado =   175000 -((175000 * 15) / 100) 
+             resultado =   1750000 -((175000 * 15) / 100) 
             }
 
         }
@@ -39,7 +39,7 @@ obtenemos el boton de calcular y guardarlo en la constante "boton"
 const boton = document.getElementById ("btn_calcular")
 
 /*
-Agregamos e ivento a escuchar el "click" para mostrar o ejecutar la funcion "calcular"
+Agregamos evento a escuchar el "click" para mostrar o ejecutar la funcion "calcular"
 */
 boton.addEventListener("click", calcular)
  

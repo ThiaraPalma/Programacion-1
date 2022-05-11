@@ -24,7 +24,7 @@ const calcular = (tem) =>{
     }
     
     /*
-    Aca guardamos el resultado 
+    retornando o entregando como respuesta el resultado 
     */
     return resultado
 }
