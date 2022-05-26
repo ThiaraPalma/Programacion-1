@@ -6,20 +6,22 @@ const obtener_criptomonedas = async () =>{
 
    let filas = []
 
-  criptomonedas_definidas.forEach(element => {
+   criptomonedas_definidas.forEach(element => {
   
        
     let fila =
         `<tr>
-         <td>${element.image}</td>
+         <td><img src="${element.image}"   class="img-fluid" style="width:3rem" /></td> 
          <td>${element.name}</td>
          <td>${element.symbol}</td>
          <td>${element.current_price}</td>
-         <td>${element.total_valume}</td>
+         <td>${element.total_volume}</td>
        </tr>`
-       filas.push(fila)
+      
+     filas.push(fila)
    });
 
    document.getElementById("tbl_body").innerHTML = filas.join('')
 
 }
+obtener_criptomonedas()
