@@ -35,7 +35,8 @@ const consumir_productos =  async (categoria) =>{
       </div>
         `  
         columnas.push(columna)
-    });
+    }
+    );
 
 
     document.getElementById("catalogo").innerHTML = columnas.join('')
