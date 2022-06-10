@@ -7,7 +7,7 @@ const obtener_usuario = async () =>{
    let filas = []
 
    //Recorremos los usuarios
-    usuarios_definidos.forEach(element => {
+    usuarios_definidos.forEach( element => {
        
 
        let fila = 
