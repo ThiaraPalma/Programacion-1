@@ -38,7 +38,7 @@ boton.addEventListener("click",imprimir)
 function generar(){
 
     let filas=[]
-            
+       // index=numero
     consolas.forEach( (element,index) => {
         let fila=`
         <tr>
