@@ -10,8 +10,7 @@ const framework = {
    }
 //Creamos funcion flecha "mostrar()"
 const mostrar = () =>{
-    const {titulo} =framework
-    const {nombre} =framework
+    const {titulo,nombre} =framework
     const{lenguaje,patron,spa} =framework.características
  
     //Mostramos o imprimimos informacion

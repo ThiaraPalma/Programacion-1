@@ -8,4 +8,4 @@ export default class Persona{
         mostrar_datos_personales(){
             alert(this.apellido)
         }
-    }
+}

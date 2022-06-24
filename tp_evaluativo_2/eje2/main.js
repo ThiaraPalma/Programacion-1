@@ -32,7 +32,7 @@ const ultimo = criptos[longuitud-1]
 const indice = criptos.indexOf("Helium")
 
 //Obtenido el indice de la criptomoneda "Helium", la mostramos en un parrafo
-const primero = criptos[7]
+const primero = criptos[indice]
 
 const imprimir = () =>{
     //Buscamos los ids de los parrafos y en ellos guardamos la informacion adquirida
