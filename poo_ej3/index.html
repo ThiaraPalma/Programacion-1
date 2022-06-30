@@ -10,33 +10,37 @@
 <body>
     <nav class="navbar navbar-dark"  style="background-color:#45B39D">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1"   style="color: #21618C">Nav</span>
+          <span class="navbar-brand mb-0 h1"   style="color: #21618C">Productos</span>
         </div>
     </nav>
-    <div  class="container">
+    <div  class="container mt-3">
 
         <div class="row">
-  
           <div class="col-lg-4">
-           
-            <label for="basic-url" class="form-label">Descripcion</label>
                 <div class="mb-3">
-                    <input type="text">
+                    <label for="basic-label" class="form-label"> Descripcion</label>
+                    <input id="inp_descripcion" class="form-control"type="text">
                    
                 </div>
-                <label for="basic-url" class="form-label">Precio de Venta</label>
                 <div class="mb-3">
-                    <input type="text">
+                    <label for="basic-label" class="form-label"> Precio de Venta</label>
+                    <input id="inp_precio_venta"class="form-control"type="text">
+                  
                    
                 </div>
-                <label for="basic-url" class="form-label">Categoria</label>
                 <div class="mb-3">
-                    
-                    <input type="text">
-                   
+                    <label  class="form-label"> Categoria</label>
+                    <select  id="slt_categoria" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione</option>
+                        <option value="1">Heladera</option>
+                        <option value="2">TV</option>
+                        <option value="3">Cocina</option>
+
+                    </select>
+
                 </div>
 
-                    <button>Guardar</button>
+                    <button  id="btn_guardar" class=" btn btn-success">Guardar</button>
                 
             
               
