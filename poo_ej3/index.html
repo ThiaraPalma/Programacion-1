@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POO 3</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-dark"  style="background-color:#45B39D">
@@ -29,6 +31,7 @@
                    
                 </div>
                 <div class="mb-3">
+
                     <label  class="form-label"> Categoria</label>
                     <select  id="slt_categoria" class="form-select" aria-label="Default select example">
                         <option selected>Seleccione</option>
@@ -37,19 +40,34 @@
                         <option value="3">Cocina</option>
 
                     </select>
-
+                   
                 </div>
-
-                    <button  id="btn_guardar" class=" btn btn-success">Guardar</button>
-                
+                 <button  id="btn_guardar" class=" btn btn-success">Guardar</button>
             
-              
+            </div> 
+
+             
+
+            <div class="col-lg-8">
+                <table  class="table table-success table-striped-columns"  >
+                <thead>
+                    <tr>
+                      <th>N°</th>
+                      <th>Descripcion</th>
+                      <th>Precio de Venta</th>
+                      <th>Categoria</th>
+                      <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+                </table>
+
             </div>
 
 
         </div>
-     
-
   </div>
 
    
