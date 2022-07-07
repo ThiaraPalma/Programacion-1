@@ -17,9 +17,39 @@ function guardar(){
      producto.guardar_producto()
 }
 document.getElementById("btn_guardar").addEventListener("click",guardar)
+
  //funcion listar invoca a la funcion obtener_datos()
 function listar (){
  let producto = new Producto()
  producto.obtener_productos()
 }
 listar()
+
+function eliminar()
+{
+   let indice = localStorage.getItem("indice")
+   //creeamos una  instancia para poder acceder a los metodos y atributos de la clase Producto
+   let producto = new Producto()
+ //haciendo uso de la instancia invocamos  al metodo eliminar_producto()
+   producto.eliminar_producto(indice)
+}
+
+document.getElementById("btn_eliminar").addEventListener("click", eliminar)
+
+
+function actualizar(){
+    
+   //creamos la instancia producto
+   let producto = new Producto()
+
+   /*
+    Y atraves de la instancia accedemos e invocamos al metodo 
+    acutualizar_producto() existen en archivo producto.js
+    */
+   producto.actualizar_producto()
+
+}
+
+document.getElementById("btn_actualizar").addEventListener("click", actualizar)
+
+

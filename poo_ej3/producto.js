@@ -59,8 +59,12 @@ export default class Producto{
           <td>${element.precio_venta}</td>
           <td>${element.categorias}</td>
           <td>
-          <button  id="btn_guardar" class=" btn btn-success">
-          <i class="fa fa-trash"></i>
+           <button onclick="almacenar_indice(${index})" data-bs-toggle="modal" data-bs-target="#mymodal"  id="btn-guardar" class=" btn btn-danger ">
+             <i class="fa fa-trash"></i>
+           </button>
+
+           <button onclick="editar(${index})" class="btn btn-primary btn-sm">
+              <i class="fa fa-edit">   </i>
            </button>
           </td>
         </tr>
@@ -70,5 +74,39 @@ export default class Producto{
 
        document.getElementById("tbody").innerHTML = filas.join('')
         
+    }
+
+    eliminar_producto(indice)
+    {
+
+       let lista_productos = JSON.parse(localStorage.getItem("productos"))
+
+       lista_productos.splice(indice,1)
+
+       localStorage.setItem("productos", JSON.stringify(lista_productos))
+
+       this.obtener_productos()
+    }
+     //getItem obtenemos 
+    actualizar_producto()
+    {
+      let indice = localStorage.getItem("indice")
+
+      let lista_producto = JSON.parse(localStorage.getItem("productos"))
+       
+      //Recogemos valores actualizados y los sustituimos o "pisamos" sobre los viejos
+      lista_producto[indice].descripcion = document.getElementById("inp_descripcion").value
+      lista_producto[indice].precio_venta = document.getElementById("inp_precio_venta").value
+      lista_producto[indice].categorias = document.getElementById("slt_categoria").value
+
+      //guardamos en Storage la lista de productos alterada(actualizada)
+      localStorage.setItem("productos",JSON.stringify(lista_producto))
+
+      this.obtener_productos()
+     
+
+      document.getElementById("btn_guardar").style.display = "block"
+      document.getElementById("btn_actualizar").style.display = "none"
+
     }
 }

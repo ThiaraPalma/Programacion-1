@@ -43,6 +43,7 @@
                    
                 </div>
                  <button  id="btn_guardar" class=" btn btn-success">Guardar</button>
+                 <button  style="display:none;" id="btn_actualizar"    class="btn btn-primary">Actualizar</button>
             
             </div> 
 
@@ -70,8 +71,28 @@
         </div>
   </div>
 
+
+  <div  id="mymodal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Eliminacion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>¿Está seguro de realizar esta acción?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button  id="btn_eliminar"type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
    
 
     <script src="main.js" type="module"></script>
+    <script src="auxiliar.js"></script>
 </body>
 </html>
