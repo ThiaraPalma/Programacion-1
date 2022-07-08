@@ -41,7 +41,9 @@ export default class Producto{
         que provienen del localStorage, especificamente del item "productos" */
        this.obtener_productos()
 
+       this.vaciar_formulario()
 
+      
     }
     obtener_productos(){
         /*Recolectamos todos los productos alojados en el item  "productos"
@@ -107,6 +109,13 @@ export default class Producto{
 
       document.getElementById("btn_guardar").style.display = "block"
       document.getElementById("btn_actualizar").style.display = "none"
+
+      this.vaciar_formulario
+
+    }
+    vaciar_formulario(){
+
+      document.getElementById("form_producto").reset()
 
     }
 }

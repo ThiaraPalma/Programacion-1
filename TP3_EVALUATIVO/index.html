@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABAJO EVALUATIVO 3</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-dark"  style="background-color:#be190d">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1"   style="color: #05131d">Comidas Rapidas</span>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-4">
+
+
+                <div class="mb-3">
+                    <input  id ="inp_descripcion" type="text" class="form-control" placeholder="Descripción de la Comida" aria-label="Username" aria-describedby="basic-addon1">
+                   
+                </div>
+
+                <div class="mb-3">
+                    <input id="inp_precio_venta" type="text" class="form-control" placeholder="Precio de Venta " aria-label="Username" aria-describedby="basic-addon1">
+                   
+                </div>
+
+
+                <div class="mb-3">
+                    
+                    <select  id="slt_categoria" class="form-select" aria-label="Default select example">
+                        <option selected>Detalles</option>
+                        <option value="1">Hamburguesa</option>
+                        <option value="2">Pizza</option>
+                        <option value="3">Empanada</option>
+                        <option value="4">Milanesa</option>
+                        <option value="5">Ensalada</option>
+
+                    </select>
+                   
+                </div>
+
+                <div class="mb-3" id="imagen">
+                    <input  id ="inp_descripcion" type="text" class="form-control" placeholder="URL imagen de la comida" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <button  id="btn_guardar" class=" btn btn-success">Guardar</button>
+                <button  style="display:none;" id="btn_actualizar"    class="btn btn-primary">Actualizar</button>
+
+            </div>
+
+            <div class="col-lg-8">
+                <table  class="table table-secondary table-striped-columns">
+                <thead>
+                    <tr>
+                      <th>N°</th>
+                      <th>Imagen</th>
+                      <th>Descripcion</th>
+                      <th>Precio de Venta</th>
+                      <th>Eliminar/Editar</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+                </table>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <div  id="mymodal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Eliminacion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>¿Está seguro de realizar esta acción?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button  id="btn_eliminar"type="button" class="btn btn-danger">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="main.js" type="module"></script>
+    <script src="auxiliar.js"></script>
+</body>
+</html>

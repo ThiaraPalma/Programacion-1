@@ -18,7 +18,7 @@ function guardar(){
 }
 document.getElementById("btn_guardar").addEventListener("click",guardar)
 
- //funcion listar invoca a la funcion obtener_datos()
+//funcion listar invoca a la funcion obtener_productos()
 function listar (){
  let producto = new Producto()
  producto.obtener_productos()
