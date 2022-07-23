@@ -49,3 +49,6 @@ function actualizar(){
  }
  
  document.getElementById("btn_actualizar").addEventListener("click", actualizar)
+
+
+ 

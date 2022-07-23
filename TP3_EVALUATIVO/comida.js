@@ -1,4 +1,4 @@
-export default class Producto{
+export default class Comida{
 
     constructor(d,pv,c){
         this.descripcion = d
@@ -88,7 +88,7 @@ export default class Producto{
     {
       let indice = localStorage.getItem("indice")
 
-      let lista_comida = JSON.parse(localStorage.getItem("comidas"))
+      let lista_comidas = JSON.parse(localStorage.getItem("comidas"))
        
       //Recogemos valores actualizados y los sustituimos o "pisamos" sobre los viejos
       lista_comidas[indice].descripcion = document.getElementById("inp_descripcion").value
@@ -103,7 +103,7 @@ export default class Producto{
       document.getElementById("btn_guardar").style.display = "block"
       document.getElementById("btn_actualizar").style.display = "none"
 
-      this.vaciar_formulario
+      this.vaciar_formulario()
 
     }
 
@@ -112,6 +112,7 @@ export default class Producto{
       document.getElementById("form_producto").reset()
 
     }
-
+  
+   
 
 }

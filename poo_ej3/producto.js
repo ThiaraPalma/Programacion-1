@@ -110,7 +110,7 @@ export default class Producto{
       document.getElementById("btn_guardar").style.display = "block"
       document.getElementById("btn_actualizar").style.display = "none"
 
-      this.vaciar_formulario
+      this.vaciar_formulario()
 
     }
     vaciar_formulario(){
