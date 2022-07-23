@@ -31,6 +31,10 @@ function guardar(){
    let comida = new Comida()
  //haciendo uso de la instancia invocamos  al metodo eliminar_producto()
    comida.eliminar_comida(indice)
+
+   const truck_modal = document.querySelector('#mymodal');
+    const modal = bootstrap.Modal.getInstance(truck_modal);    
+    modal.hide()
 }
 
 document.getElementById("btn_eliminar").addEventListener("click", eliminar)
