@@ -1,18 +1,19 @@
 export default class Comida{
-
-    constructor(d,pv,c){
+     //a contructor le indicamos cuantos parametros recibira y en que orden 
+    constructor(d,pv,i,c){
         this.descripcion = d
         this.precio_venta = pv
+        this.imagen = i
         this.categorias = c
+
     }
    
-    //metodo
-    guardar_comida(){
+     guardar_comida(){
 
-        //arrays de objetos
         let nueva_comida ={
             descripcion: this.descripcion,
             precio_venta:this.precio_venta,
+            imagen:this.imagen,
             categorias : this.categorias
 
         }
@@ -52,8 +53,10 @@ export default class Comida{
           <tr> 
           <td>${index+1}</td>
             <td>${element.descripcion}</td>
-            <td>${element.precio_venta}</td>
-            <td>${element.categorias}</td>
+            <td>${element.precio_venta})</td>
+            <td> <img src="${element.imagen}" alt="" style="width:8rem"></td>
+           <td>${element.categorias}</td>
+            
             <td>
             <button onclick="almacenar_indice(${index})" data-bs-toggle="modal" data-bs-target="#mymodal"  id="btn-guardar" class=" btn btn-danger ">
               <i class="fa fa-trash"></i>
@@ -97,6 +100,7 @@ export default class Comida{
 
       //guardamos en Storage la lista de productos alterada(actualizada)
       localStorage.setItem("comidas",JSON.stringify(lista_comidas))
+
       this.obtener_comidas()
      
 
