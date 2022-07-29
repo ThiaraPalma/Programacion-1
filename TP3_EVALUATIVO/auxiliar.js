@@ -1,6 +1,6 @@
 function almacenar_indice(indice)
 {
-   //guardamos indice en localStorage
+   //indice en localStorage
    localStorage.setItem("indice",indice)
 }
 
