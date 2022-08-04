@@ -45,8 +45,7 @@ function actualizar(){
     //creamos la instancia producto
     let comida = new Comida()
  
-    /* mediante de la instancia accedemos e invocamos al metodo 
-     acutualizar_producto() que existe en el archivo comida.js*/
+   //mediante de la instancia accedemos e invocamos al metodo acutualizar_producto() que existe en el archivo comida.js
     comida.actualizar_comida()
  
  }

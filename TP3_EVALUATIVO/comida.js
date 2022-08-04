@@ -117,6 +117,5 @@ export default class Comida{
 
     }
   
-   
 
 }
